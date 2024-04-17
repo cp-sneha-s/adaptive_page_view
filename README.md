@@ -4,5 +4,9 @@
 
 
 
-https://github.com/cp-sneha-s/adaptive_page_view/blob/main/AdaptivePageView.gif
+<img src="https://github.com/cp-sneha-s/adaptive_page_view/blob/main/AdaptivePageView.gif?raw=true" width="32%">
+
+
+
+
 
