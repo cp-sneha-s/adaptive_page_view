@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-
 import 'package:infinite_page_view_demo/starter/starter_pageview.dart';
 
 import 'final/final_pageview.dart';
@@ -27,8 +25,8 @@ class MyApp extends StatelessWidget {
           title: const Text("Infinite Pageview"),
           foregroundColor: Colors.white,
         ),
-        body: const Center(
-          child: StarterPageView(),
+        body:  Center(
+          child: FinalPageView(),
         ),
       ),
     );

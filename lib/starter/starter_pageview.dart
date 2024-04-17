@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
-class StarterPageView extends StatefulWidget {
-  const StarterPageView({super.key});
+class StarterPageView extends StatelessWidget {
+  StarterPageView({super.key});
 
 
-  @override
-  State<StarterPageView> createState() => _StarterPageViewState();
-}
-
-class _StarterPageViewState extends State<StarterPageView> {
   final List<int> items= List.generate(5, (index) => index);
 
   @override

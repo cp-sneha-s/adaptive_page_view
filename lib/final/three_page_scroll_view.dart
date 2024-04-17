@@ -63,7 +63,7 @@ class _ThreePageScrollViewState extends State<ThreePageScrollView> {
       children: [
         Opacity(
           opacity: 0,
-          child: SizeReportingWidget(
+          child: SizeNotifierWidget(
             child: widget.current,
             onSizeChange: (size) {
               setState(() {
@@ -90,25 +90,25 @@ class _ThreePageScrollViewState extends State<ThreePageScrollView> {
   }
 }
 
-class SizeReportingWidget extends StatefulWidget {
+class SizeNotifierWidget extends StatefulWidget {
   final Widget child;
   final ValueChanged<Size> onSizeChange;
 
-  const SizeReportingWidget({
+  const SizeNotifierWidget({
     super.key,
     required this.child,
     required this.onSizeChange,
   });
 
   @override
-  State<SizeReportingWidget> createState() => _SizeReportingWidgetState();
+  State<SizeNotifierWidget> createState() => _SizeNotifierWidgetState();
 }
 
-class _SizeReportingWidgetState extends State<SizeReportingWidget> {
+class _SizeNotifierWidgetState extends State<SizeNotifierWidget> {
   Size? _oldSize;
 
   @override
-  void didUpdateWidget(covariant SizeReportingWidget oldWidget) {
+  void didUpdateWidget(covariant SizeNotifierWidget oldWidget) {
     WidgetsBinding.instance.addPostFrameCallback((_) => _notifySize());
     super.didUpdateWidget(oldWidget);
   }
